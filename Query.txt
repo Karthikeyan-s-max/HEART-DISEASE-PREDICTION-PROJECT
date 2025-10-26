@@ -1,0 +1,38 @@
+create database realestate
+ 
+CREATE TABLE user_information(
+        userid int primary key auto_increment NOT NULL,
+        username varchar(50) NULL,
+        password varchar(50) NULL,
+        address varchar(50) NULL,
+        emailid varchar(50) NULL, 
+        mobile varchar(50) NULL
+       )
+
+CREATE TABLE Land(
+        landid int primary key Not NULL,
+        area varchar(50) NULL,
+        sub varchar(50) NULL,
+        measure varchar(50) NULL,
+        price int NULL, 
+        approved varchar(50) NULL,
+       year int NULL
+       )
+CREATE TABLE Regre(
+        regid int primary key  auto_increment  Not NULL,
+        area varchar(50) NULL,
+        total int null,        
+       mean int null,
+       vari int null
+       );
+
+CREATE TABLE mynewLand(
+	regid int primary key auto_increment NOT NULL,
+        landid varchar(50) NULL,
+        area varchar(50) NULL,
+        sub varchar(50) NULL,
+        measure varchar(50) NULL,
+        price varchar(50) NULL, 
+        approved varchar(50) NULL,
+		year varchar(50) NULL
+       );
